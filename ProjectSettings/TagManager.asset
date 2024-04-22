@@ -4,13 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Terrain
   - Enemy
   - Trap
   - Power Up
   - Jump
   - Dash
   - Stomp
+  - Ground
   layers:
   - Default
   - TransparentFX
