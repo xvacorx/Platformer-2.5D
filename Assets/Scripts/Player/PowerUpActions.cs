@@ -41,6 +41,7 @@ public class PowerUpActions : MonoBehaviour
         }
         else
         {
+            ppManager.jumps = 0;
             Debug.Log("No Jumps Available");
         }
     }
@@ -54,6 +55,7 @@ public class PowerUpActions : MonoBehaviour
         }
         else
         {
+            ppManager.dashes = 0;
             Debug.Log("No Dashes Available");
         }
     }
@@ -67,6 +69,7 @@ public class PowerUpActions : MonoBehaviour
         }
         else
         {
+            ppManager.stomps = 0;
             Debug.Log("No Stomps Available");
         }
     }
@@ -75,5 +78,4 @@ public class PowerUpActions : MonoBehaviour
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
     }
-
 }

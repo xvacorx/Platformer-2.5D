@@ -11,10 +11,29 @@ public class PowerUpManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Jump")) { jumps++; Destroy(other.gameObject); }
-        else if (other.gameObject.CompareTag("Dash")) { dashes++; Destroy(other.gameObject); }
-        else if (other.gameObject.CompareTag("Stomp")) { stomps++; Destroy(other.gameObject); }
-        else if (other.gameObject.CompareTag("Collectible")) { Debug.Log("Collected"); Destroy(other.gameObject); }
-        else { Debug.Log("Unkown Item"); }
+        if (other.gameObject.CompareTag("Jump"))
+        {
+            jumps++; Destroy(other.gameObject); if (jumps >= 3) { jumps = 3; }
+        } // Jumps Manager
+
+        else if (other.gameObject.CompareTag("Dash"))
+        {
+            dashes++; Destroy(other.gameObject); if (dashes >= 3) { dashes = 3; }
+        } // Dashes Manager
+
+        else if (other.gameObject.CompareTag("Stomp"))
+        {
+            stomps++; Destroy(other.gameObject); if (stomps >= 3) { stomps = 3; }
+        } // Stomps Manager
+
+        else if (other.gameObject.CompareTag("Collectible"))
+        {
+            Debug.Log("Collected"); Destroy(other.gameObject);
+        } // Collectibles Manager
+
+        else
+        {
+            Debug.Log("Unkown Item");
+        }
     }
 }
