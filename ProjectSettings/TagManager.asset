@@ -11,6 +11,7 @@ TagManager:
   - Dash
   - Stomp
   - Ground
+  - Collectible
   layers:
   - Default
   - TransparentFX

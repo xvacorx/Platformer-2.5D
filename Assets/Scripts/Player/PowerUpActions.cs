@@ -12,8 +12,10 @@ public class PowerUpActions : MonoBehaviour
     public float dashDuration = 0.5f;
     public float stompSpeed = 5f;
 
-    private bool isDashing = false;
-    private bool isStomping = false;
+    public bool isDashing = false;
+    public bool isStomping = false;
+
+    public bool stompEnabled = false;
 
     private void Start()
     {
@@ -31,17 +33,36 @@ public class PowerUpActions : MonoBehaviour
         {
             Dash();
         }
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && stompEnabled)
         {
             Stomp();
         }
+        if (isDashing)
+        {
+            StartCoroutine(ResetDashingAfterDelay(dashDuration));
+        }
     }
-
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            stompEnabled = false;
+            isStomping = false;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            stompEnabled = true;
+        }
+    }
     public void Jump()
     {
         if (ppManager.jumps >= 1)
         {
             ResetVelocity();
+            stompEnabled = true;
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             ppManager.jumps--;
         }
@@ -56,8 +77,9 @@ public class PowerUpActions : MonoBehaviour
     {
         if (ppManager.dashes >= 1)
         {
-            isDashing = true;
             ResetVelocity();
+            stompEnabled = true;
+            isDashing = true;
             rb.velocity += transform.forward * dashSpeed;
             ppManager.dashes--;
         }
@@ -72,8 +94,8 @@ public class PowerUpActions : MonoBehaviour
     {
         if (ppManager.stomps >= 1)
         {
-            isStomping = true;
             ResetVelocity();
+            isStomping = true;
             rb.velocity += Vector3.down * stompSpeed;
             ppManager.stomps--;
         }
@@ -83,9 +105,16 @@ public class PowerUpActions : MonoBehaviour
             Debug.Log("No Stomps Available");
         }
     }
+    IEnumerator ResetDashingAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        isDashing = false;
+    }
 
     private void ResetVelocity()
     {
+        isDashing = false;
+        isStomping = false;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
     }

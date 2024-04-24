@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PowerUpManager : MonoBehaviour
 {
@@ -11,29 +12,37 @@ public class PowerUpManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Jump"))
+        switch (other.gameObject.tag)
         {
-            jumps++; Destroy(other.gameObject); if (jumps >= 3) { jumps = 3; }
-        } // Jumps Manager
+            case "Jump":
+                jumps++;
+                Destroy(other.gameObject);
+                if (jumps >= 3) jumps = 3;
+                Debug.Log("Jump collected");
+                break; // Jumps
 
-        else if (other.gameObject.CompareTag("Dash"))
-        {
-            dashes++; Destroy(other.gameObject); if (dashes >= 3) { dashes = 3; }
-        } // Dashes Manager
+            case "Dash":
+                dashes++;
+                Destroy(other.gameObject);
+                if (dashes >= 3) dashes = 3;
+                Debug.Log("Dash collected");
+                break; // Dashes
 
-        else if (other.gameObject.CompareTag("Stomp"))
-        {
-            stomps++; Destroy(other.gameObject); if (stomps >= 3) { stomps = 3; }
-        } // Stomps Manager
+            case "Stomp":
+                stomps++;
+                Destroy(other.gameObject);
+                if (stomps >= 3) stomps = 3;
+                Debug.Log("Stomp collected");
+                break; // Stomps
 
-        else if (other.gameObject.CompareTag("Collectible"))
-        {
-            Debug.Log("Collected"); Destroy(other.gameObject);
-        } // Collectibles Manager
+            case "Collectible":
+                Debug.Log("Collectible collected");
+                Destroy(other.gameObject);
+                break; // Collectibles
 
-        else
-        {
-            Debug.Log("Unkown Item");
+            default:
+                Debug.Log("Unknown item");
+                break;
         }
     }
 }
