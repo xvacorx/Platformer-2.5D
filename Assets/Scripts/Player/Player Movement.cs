@@ -19,8 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (movement != Vector3.zero)
         {
-            Quaternion newRotation = Quaternion.LookRotation(movement);
+            Quaternion newRotation = Quaternion.Euler(0f, moveHorizontal > 0 ? 0f : 180f, 0f);
             rb.MoveRotation(newRotation);
-        } // Player Rotation
+        }
     }
 }
