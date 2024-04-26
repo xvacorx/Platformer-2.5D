@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 59c7f566f6bb61e44adc6f30152f363c
+timeCreated: 1467734413
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66599
+  packageName: Handpainted Turntable Platforms
+  packageVersion: 1.0
+  assetPath: Assets/Turntable_platforms/Prefabs/base_prefabs/stem.prefab
+  uploadId: 195637

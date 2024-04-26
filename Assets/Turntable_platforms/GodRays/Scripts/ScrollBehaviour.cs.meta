@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f54384908c96b0245ab93c6f3261c32d
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66599
+  packageName: Handpainted Turntable Platforms
+  packageVersion: 1.0
+  assetPath: Assets/Turntable_platforms/GodRays/Scripts/ScrollBehaviour.cs
+  uploadId: 195637

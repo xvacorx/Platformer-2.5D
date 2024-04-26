@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerDamage : MonoBehaviour
 {
-    public float stompAreaRadius = 1f;
+    float stompAreaRadius = 2f;
 
     PowerUpActions powerUpActions;
     private void Start()
@@ -25,7 +25,7 @@ public class PlayerDamage : MonoBehaviour
                 Destroy(other.gameObject);
             }
 
-            else { Debug.Log("Recibe Daño"); }
+            //else { Debug.Log("Recibe Daño"); }
         }
     }
 

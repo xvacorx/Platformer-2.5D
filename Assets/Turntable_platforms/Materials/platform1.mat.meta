@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4d4e3a1ba388d2a49a8e816b2500a8c7
+timeCreated: 1467733926
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66599
+  packageName: Handpainted Turntable Platforms
+  packageVersion: 1.0
+  assetPath: Assets/Turntable_platforms/Materials/platform1.mat
+  uploadId: 195637

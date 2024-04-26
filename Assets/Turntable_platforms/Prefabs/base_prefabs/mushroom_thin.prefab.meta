@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e3a0ac2c110c07844a34f62e2b6e1986
+timeCreated: 1467734409
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66599
+  packageName: Handpainted Turntable Platforms
+  packageVersion: 1.0
+  assetPath: Assets/Turntable_platforms/Prefabs/base_prefabs/mushroom_thin.prefab
+  uploadId: 195637

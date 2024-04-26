@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 312855ea942bc314897486960b8a5e98
+timeCreated: 1431894409
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 37774
+  packageName: Polarized Platform Pack
+  packageVersion: 1.0
+  assetPath: Assets/PolarizedPlatformPack/Demo/DemoScene.unity
+  uploadId: 67233

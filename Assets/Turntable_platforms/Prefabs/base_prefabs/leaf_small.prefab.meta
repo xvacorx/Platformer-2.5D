@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 499cc96c718823d4483d409753062091
+timeCreated: 1467734405
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66599
+  packageName: Handpainted Turntable Platforms
+  packageVersion: 1.0
+  assetPath: Assets/Turntable_platforms/Prefabs/base_prefabs/leaf_small.prefab
+  uploadId: 195637

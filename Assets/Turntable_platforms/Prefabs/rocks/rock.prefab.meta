@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 50ea8cb5ed8dc0e4ba39dc7ede8e838d
+timeCreated: 1467808346
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66599
+  packageName: Handpainted Turntable Platforms
+  packageVersion: 1.0
+  assetPath: Assets/Turntable_platforms/Prefabs/rocks/rock.prefab
+  uploadId: 195637

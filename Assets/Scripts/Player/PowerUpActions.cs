@@ -29,11 +29,11 @@ public class PowerUpActions : MonoBehaviour
         {
             Jump();
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Fire3"))
         {
             Dash();
         }
-        if (Input.GetMouseButtonDown(1) && stompEnabled)
+        if (Input.GetButtonDown("Fire1") && stompEnabled)
         {
             Stomp();
         }
@@ -69,10 +69,9 @@ public class PowerUpActions : MonoBehaviour
         else
         {
             ppManager.jumps = 0;
-            Debug.Log("No Jumps Available");
+            //Debug.Log("No Jumps Available");
         }
     }
-
     public void Dash()
     {
         if (ppManager.dashes >= 1)
@@ -80,16 +79,15 @@ public class PowerUpActions : MonoBehaviour
             ResetVelocity();
             stompEnabled = true;
             isDashing = true;
-            rb.velocity += transform.forward * dashSpeed;
+            rb.velocity += transform.right * dashSpeed;
             ppManager.dashes--;
         }
         else
         {
             ppManager.dashes = 0;
-            Debug.Log("No Dashes Available");
+            //Debug.Log("No Dashes Available");
         }
     }
-
     public void Stomp()
     {
         if (ppManager.stomps >= 1)
@@ -102,14 +100,14 @@ public class PowerUpActions : MonoBehaviour
         else
         {
             ppManager.stomps = 0;
-            Debug.Log("No Stomps Available");
+            //Debug.Log("No Stomps Available");
         }
     }
     IEnumerator ResetDashingAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         isDashing = false;
-    }
+    } 
 
     private void ResetVelocity()
     {
@@ -117,8 +115,7 @@ public class PowerUpActions : MonoBehaviour
         isStomping = false;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
-    }
-
+    } // Sets velocity to 0
     public bool IsDashing()
     {
         return isDashing;

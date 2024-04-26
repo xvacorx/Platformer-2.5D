@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eb435e31be2b70d4287ef876374d53b9
+timeCreated: 1467734380
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66599
+  packageName: Handpainted Turntable Platforms
+  packageVersion: 1.0
+  assetPath: Assets/Turntable_platforms/Prefabs/base_prefabs/platform1.prefab
+  uploadId: 195637

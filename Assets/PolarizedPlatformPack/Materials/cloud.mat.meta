@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 97ebec5d035a2184ab149ca802a6f626
+timeCreated: 1431989357
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 37774
+  packageName: Polarized Platform Pack
+  packageVersion: 1.0
+  assetPath: Assets/PolarizedPlatformPack/Materials/cloud.mat
+  uploadId: 67233

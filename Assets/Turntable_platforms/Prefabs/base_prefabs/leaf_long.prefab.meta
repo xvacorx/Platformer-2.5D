@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 338360c9519cfba45a18f967fe8d1b86
+timeCreated: 1467734401
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66599
+  packageName: Handpainted Turntable Platforms
+  packageVersion: 1.0
+  assetPath: Assets/Turntable_platforms/Prefabs/base_prefabs/leaf_long.prefab
+  uploadId: 195637

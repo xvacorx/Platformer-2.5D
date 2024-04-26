@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cfef585171d049d44a13081f8e3648c8
+timeCreated: 1467734127
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66599
+  packageName: Handpainted Turntable Platforms
+  packageVersion: 1.0
+  assetPath: Assets/Turntable_platforms/Materials/Cutout_2Sided.shader
+  uploadId: 195637

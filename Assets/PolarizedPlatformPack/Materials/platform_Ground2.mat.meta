@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7754eccb5bbdbb14e8de7122d148e2b0
+timeCreated: 1431986123
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 37774
+  packageName: Polarized Platform Pack
+  packageVersion: 1.0
+  assetPath: Assets/PolarizedPlatformPack/Materials/platform_Ground2.mat
+  uploadId: 67233

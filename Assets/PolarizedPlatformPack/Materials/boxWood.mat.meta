@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 257ed7c750a5f1d4aa6465aafc68fd63
+timeCreated: 1432586019
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 37774
+  packageName: Polarized Platform Pack
+  packageVersion: 1.0
+  assetPath: Assets/PolarizedPlatformPack/Materials/boxWood.mat
+  uploadId: 67233
