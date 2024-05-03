@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    public GameManager manager;
+
     private Transform target;
 
     private bool followPlayer = true;
@@ -21,7 +23,7 @@ public class CameraFollow : MonoBehaviour
             Vector3 newPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
             transform.position = newPosition;
         }
-        if(target.position.y <= mapLimit) { followPlayer = false; }
+        if(target.position.y <= mapLimit) { followPlayer = false; manager.Lose(); }
         else { followPlayer = true; }
     }
 

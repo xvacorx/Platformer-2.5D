@@ -15,6 +15,7 @@ public class VisualBehaviours : MonoBehaviour
     public Vector3 stompRotation;
 
     public GameObject collectEffect;
+    public GameObject ppCollect;
 
     public GameObject stompEffect;
     public GameObject dashingEffect;
@@ -75,6 +76,11 @@ public class VisualBehaviours : MonoBehaviour
     public void CollectableEffect()
     {
         GameObject collect = Instantiate(collectEffect, transform.position, Quaternion.identity);
+        Destroy(collect, 3f);
+    }
+    public void PPCollected()
+    {
+        GameObject collect = Instantiate(ppCollect, transform.position, Quaternion.identity);
         Destroy(collect, 3f);
     }
 }
