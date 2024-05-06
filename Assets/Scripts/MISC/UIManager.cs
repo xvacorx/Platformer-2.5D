@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
 
     public TextMeshProUGUI time;
 
+    public PlayerMovement player;
+
     float actualTime;
     private void Start()
     {
@@ -20,7 +22,7 @@ public class UIManager : MonoBehaviour
     }
     private void Update()
     {
-        actualTime += Time.deltaTime;
+        if (player.enabled) { actualTime += Time.deltaTime; }
 
         time.text = actualTime.ToString();
         jump.text = "Jumps: " + ppmanager.jumps;

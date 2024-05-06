@@ -59,4 +59,8 @@ public class GameManager : MonoBehaviour
         endMenu.SetActive(false);
         loseMenu.SetActive(false);
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }

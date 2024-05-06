@@ -25,7 +25,7 @@ public class PowerUpActions : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (Input.GetButtonDown("Jump"))
         {
